@@ -51,7 +51,7 @@ static const AVOption dnn_processing_options[] = {
     { "openvino",    "openvino backend flag",      0,                        AV_OPT_TYPE_CONST,     { .i64 = DNN_OV },    0, 0, FLAGS, .unit = "backend" },
 #endif
 #if (CONFIG_LIBTORCH == 1)
-    { "torch",       "torch backend flag",         0,                        AV_OPT_TYPE_CONST,     { .i64 = DNN_TH },    0, 0, FLAGS, "backend" },
+    { "torch",       "torch backend flag",         0,                        AV_OPT_TYPE_CONST,     { .i64 = DNN_TH },    0, 0, FLAGS, .unit = "backend" },
 #endif
     { NULL }
 };
